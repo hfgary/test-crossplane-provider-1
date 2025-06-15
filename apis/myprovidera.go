@@ -20,7 +20,7 @@ package apis
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 
-	samplev1alpha1 "github.com/crossplane/provider-myprovidera/apis/sample/v1alpha1"
+	samplev1alpha1 "github.com/crossplane/provider-myprovidera/apis/samplea/v1alpha1"
 	myproviderav1alpha1 "github.com/crossplane/provider-myprovidera/apis/v1alpha1"
 )
 

@@ -21,7 +21,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 
 	"github.com/crossplane/provider-myprovidera/internal/controller/config"
-	"github.com/crossplane/provider-myprovidera/internal/controller/mytype"
+	"github.com/crossplane/provider-myprovidera/internal/controller/mytypea"
 )
 
 // Setup creates all MyProviderA controllers with the supplied logger and adds them to
@@ -29,7 +29,7 @@ import (
 func Setup(mgr ctrl.Manager, o controller.Options) error {
 	for _, setup := range []func(ctrl.Manager, controller.Options) error{
 		config.Setup,
-		mytype.Setup,
+		mytypea.Setup,
 	} {
 		if err := setup(mgr, o); err != nil {
 			return err
