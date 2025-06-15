@@ -4,18 +4,18 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.16.5
-  name: mytypes.sample.myprovidera.crossplane.io
+  name: mytypeas.samplea.myprovidera.crossplane.io
 spec:
-  group: sample.myprovidera.crossplane.io
+  group: samplea.myprovidera.crossplane.io
   names:
     categories:
     - crossplane
     - managed
     - myprovidera
-    kind: MyType
-    listKind: MyTypeList
-    plural: mytypes
-    singular: mytype
+    kind: MyTypeA
+    listKind: MyTypeAList
+    plural: mytypeas
+    singular: mytypea
   scope: Cluster
   versions:
   - additionalPrinterColumns:
@@ -34,7 +34,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: A MyType is an example API type.
+        description: A MyTypeA is an example API type.
         properties:
           apiVersion:
             description: |-
@@ -54,7 +54,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: A MyTypeSpec defines the desired state of a MyType.
+            description: A MyTypeASpec defines the desired state of a MyTypeA.
             properties:
               deletionPolicy:
                 default: Delete
@@ -71,7 +71,7 @@ spec:
                 - Delete
                 type: string
               forProvider:
-                description: MyTypeParameters are the configurable fields of a MyType.
+                description: MyTypeAParameters are the configurable fields of a MyTypeA.
                 properties:
                   configurableField:
                     type: string
@@ -246,10 +246,10 @@ spec:
             - forProvider
             type: object
           status:
-            description: A MyTypeStatus represents the observed state of a MyType.
+            description: A MyTypeAStatus represents the observed state of a MyTypeA.
             properties:
               atProvider:
-                description: MyTypeObservation are the observable fields of a MyType.
+                description: MyTypeAObservation are the observable fields of a MyTypeA.
                 properties:
                   configurableField:
                     type: string

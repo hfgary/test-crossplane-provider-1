@@ -41,7 +41,7 @@ import (
 )
 
 const (
-	errNotMyTypeA    = "managed resource is not a MyTypeA custom resource"
+	errNotMyTypeA   = "managed resource is not a MyTypeA custom resource"
 	errTrackPCUsage = "cannot track ProviderConfig usage"
 	errGetPC        = "cannot get ProviderConfig"
 	errGetCreds     = "cannot get credentials"
